@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://elshewihi.com
+display_url: https://elshewihi.com
+logo_url: /favicon.ico
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "content"
+    label: "المحتوى"
+    files:
+      - name: "projects"
+        label: "الأعمال"
+        file: "content/projects.json"
+        fields:
+          - label: "قائمة الأعمال"
+            name: "projects"
+            widget: "list"
+            label_singular: "عمل"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "عنوان العمل", name: "title", widget: "string" }
+              - { label: "وصف العمل", name: "description", widget: "text" }
+              - { label: "صورة العمل", name: "image", widget: "image", required: false }
+              - label: "نوع العمل"
+                name: "category"
+                widget: "select"
+                required: false
+                options: ["تصميم جرافيك", "تصوير", "مونتاج", "تعليق صوتي", "أخرى"]
