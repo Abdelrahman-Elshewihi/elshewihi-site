@@ -1,3 +1,10 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "title": "تصميم شعارات",
+      "description": "شعارات احترافية وجذابة لأي مؤسسة أو فريق عمل ",
+      "image": "/assets/uploads/e.n.g-logo.jpg",
+      "category": "تصميم جرافيك"
+    }
+  ]
 }
